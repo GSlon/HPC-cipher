@@ -1,0 +1,7 @@
+{
+	"key": "12345678fdsafsadfadsfsad",
+	"spice": "0x4957df9f02329f2d07289bb61a440e059f9c5dcb93048b5686208a26403c5e7f99ed0051cdb0d7bb8f0c6e4962e43023a0b02b363ffa0b53abf6d3f4f848f5e9",
+	"iv": "0xf3229874f3229874",
+	"blocksize": 64,
+	"mode": "ecb"
+}

@@ -58,7 +58,7 @@ class MyWindow(QMainWindow, MainWindow.Ui_MainWindow):
         self.Progresses.clear()
 
     def openFile(self):
-        fileNames = QFileDialog().getOpenFileNames(self, "Open Files", "/home/slon/Project/cripta/HPCkurs/App")[0]
+        fileNames = QFileDialog().getOpenFileNames(self, "Open Files", os.getcwd())[0]
 
         if len(fileNames) == 0:
             return
@@ -80,7 +80,7 @@ class MyWindow(QMainWindow, MainWindow.Ui_MainWindow):
             self.Path[fname] = progress
 
     def setConfig(self):
-        name = QFileDialog().getOpenFileName(self, "Open Json File", "/home/slon/Project/cripta/HPCkurs/App",
+        name = QFileDialog().getOpenFileName(self, "Open Json File", os.getcwd(),
                                              "Json (*.json)")[0]
 
         if len(name) == 0:
